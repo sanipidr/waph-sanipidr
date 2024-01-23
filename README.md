@@ -6,8 +6,9 @@
 
 **Email**: sanipidr@ucmail.uc.edu
 
-**Short-bio** : I have very interested in web programming and ethical hacking 
-![Dilip's headshot](/Users/dilipkumar/Downloads/headshot.png)
+**Short-bio** : I have very interested in web programming and ethical hacking.
+
+![Dilip's headshot](/Users/dilipkumar/Downloads)
 
 
 
