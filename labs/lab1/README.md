@@ -38,13 +38,21 @@ Firstly,connecting to the webserver at port 80 and a valid http request typed ma
 
 ![TELNET IN TERMINAL](images/HTTPWITHTELNET.png)
 
+
 ![TELNET HTTP REQUEST](images/TELNETREQUEST.png)
 
 2.Get Requests typed directy in Telnet are like basic text message which are very short.Get Requests sent by the browser are in-detail with more information like details about the browser and the past activity. about the pacakage and addresses.
 
 ![TELNET HTTP RESPONSE](images/TELNETRESPONSE.png)
 
+
+
 3.The information sent and received between the server and the client using the web browser and telnet.The main keydifference is telnet doesn't encrypt the data.for example the information which is sent through telnet is simple text based which is not scecure.The information sent through browser which is is encode format it is private and secure.In telnet we cannot protect data during communication.
+
+
+
+
+
 
 ## PART-2 : BASIC WEB APPLICATION PROGRAMMING
 
