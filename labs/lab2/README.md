@@ -212,7 +212,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
                     $("#data").val("");
             }
         ````
- ![Jquery_Ajax_Get](images/AJAX_GET.png)
+ ![Jquery_Ajax_Get](images/AJAX_GET.png) 
 
    source code: `Jquery post`
 ```JS
