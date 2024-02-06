@@ -11,8 +11,7 @@
 **Short-bio** : I have very interested in web programming and ethical hacking .
 ![headshot](images/headshot.jpeg)
 
-Respository's URL: [https://github.com/sanipidr/waph-sanipidr/tree/main/labs/lab2](https://github.com/sanipidr/waph-sanipidr/tree/main/labs/lab2)
-
+Respository's URL:[https://github.com/sanipidr/waph-sanipidr/tree/main/labs/lab2](https://github.com/sanipidr/waph-sanipidr/tree/main/labs/lab2)
 
 ## Lab 2 : FRONT-END WEB DEVELOPMENT
 In this lab2 excercise we have done the two tasks of front-end web development. 
@@ -101,7 +100,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
   </html>
   ```
 
-  **1.Inline JavaScript Code**
+ **1.Inline JavaScript Code**
 
   -When we click the part of the page labeled "date",It automatically cahnges to show you the curent date and time.It's like a clock we can update with a click.
   -whenever we type anything in the input box, a message pops up behind the scenes to let the computer know taht we have pressed the key
@@ -114,7 +113,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
   <div id="date" onclick="document.getElementById('date').innerHTML=Date()">Click here to show date</div>
   ```
 
-- **2.Digital clock:**
+**2.Digital clock:**
 - A web page has a funtion displaytime().It shows the current date and time.It acts like an clock set for every half second.this displays the clock right on the page.
 
 - source code: `Digital clock `
@@ -124,7 +123,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
             setInterval(displayTime,500);
 
             ```
-- **3.Show/Hide Email:** 
+**3.Show/Hide Email:** 
 - There's is a part of the webpage "email".onclick event is triggered with it,and showhideEmail() function Associated with it.
 - we have implemented a external javascript code for the email.js.
 
@@ -143,8 +142,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
   }
 ```
 
-- **4.Analog Clock:**
-- ww have triggred the javascript code from the external file clock.js from github file.It draws the analog clock.
+**4.Analog Clock:**
+- we have triggred the javascript code from the external file clock.js from github file.It draws the analog clock.
 
 - source code: `Analog-Clock `
 ```
@@ -155,7 +154,10 @@ We have done the Web API Integration using Ajax to display a random joke and by 
             radius = radius *0.90
             setInterval(drawClock,1000);
   ```
+
 ![BASIC_JAVASCRIPT](images/BASIC_JAVASCRIPT.png)
+
+
 
 ## Task 2 - Ajax,CSS,Jquery, and Web API Integration
 
@@ -181,7 +183,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 ```
 <br>
 
-![Ajax_Request](images/Ajaxrequest.png)
+![Ajax_Request](images/Ajaxrequests.png)
 
 
 
