@@ -113,6 +113,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
   <div id="date" onclick="document.getElementById('date').innerHTML=Date()">Click here to show date</div>
   ```
 
+
 **2.Digital clock:**
 - A web page has a funtion displaytime().It shows the current date and time.It acts like an clock set for every half second.this displays the clock right on the page.
 
@@ -123,6 +124,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
             setInterval(displayTime,500);
 
             ```
+
 **3.Show/Hide Email:** 
 - There's is a part of the webpage "email".onclick event is triggered with it,and showhideEmail() function Associated with it.
 - we have implemented a external javascript code for the email.js.
@@ -188,7 +190,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 
 
 
-- **b.CSS:**
+**b.CSS:**
 - CSS makes the web page looks good.CSS use as a style guide for the web page.CSS code written in the  HTML code.The CSS will add special touches to the specific elements like buttons.All the CSS work together to make the webpage look nice and consistent.<br>
 
 ![CSS](images/CSS.png)
@@ -233,9 +235,10 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 
 ![Jquery_Ajax_Post](images/AJAX_POST.png)
 
+
 ## Web API Integration:
 
-- **1. Joke API Integration**
+**1. Joke API Integration**
 
 - We used jQuery's $.get method to ask for information from a website.Speeecifically,we asked for a programming joke from a website called JokeAPI.When we got the joke back from the website,we changed the text inside a specific part of our web page to show the joke we received.
 
@@ -251,7 +254,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 
 
 
-- **2.  Agify API Integration:**
+**2.Agify API Integration:**
 
 - I used the fetch tool to ask a website called 'agify' about the age of a person with a given name.I did this by sending a special request called a 'GET' request to Agify's website the name of our choice as the input.The response stored in a format called 'response.json()'. Finally I put that age information into the specific part of a webapge called 'HTML element' with the ID 'response'.
 
