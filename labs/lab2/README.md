@@ -183,7 +183,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 ```
 <br>
 
-![Ajax_Request](images/Ajaxrequests.png)
+![Ajax_Request](images/Ajaxrequest.png)
 
 
 
