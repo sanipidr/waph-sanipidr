@@ -229,6 +229,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 ```  
 <br>  
 
+![Jquery_Ajax_Get](Images/AJAX_GET.png) 
+
 ![Jquery_Ajax_Post](images/AJAX_POST.png)
 
 ## Web API Integration:
@@ -248,7 +250,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
             ````
 
 
-![Joke_API](images/JOKE_API.png)  
+![Joke_API](Images/JOKE_API.png)  
 
 
 - **2.  Agify API Integration:**
