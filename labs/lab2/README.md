@@ -28,9 +28,9 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 ![HTML_Page](images/HTML.png)
 
 
-- **b.BASIC HTML FORMS AND JAVA SCRIPT**
+- **b.Simple Javascript**
 
-- source code: `BASIC HTML FORMS AND JAVA SCRIPT `
+- source code: `SIMPLE JAVA SCRIPT `
 
  ```html
     <!DOCTYPE html>
@@ -55,11 +55,13 @@ We have done the Web API Integration using Ajax to display a random joke and by 
       </div>    
       <div id="digital-clock"></div>
       <div id="digital-clock"></div>
-      <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
+      <canvas id="analog-clock" width="150" height="150" 
+      style="background-color:#999"></canvas>
       <script src="https://waph-uc.github.io/clock.js"></script>
       <script type="text/JavaScript">
               function displayTime() {
-                      document.getElementById('digital-clock').innerHTML ="Current time:" + new Date();}
+                      document.getElementById('digital-clock').
+                      innerHTML ="Current time:" + new Date();}
               setInterval(displayTime,500);
               var canvas = document.getElementById("analog-clock");
               var ctx = canvas.getContext("2d");
@@ -122,8 +124,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
    function displayTime() {
                     document.getElementById('digital-clock').innerHTML ="Current time:" + new Date();}
             setInterval(displayTime,500);
-
-            ```
+```
 
 **3.Show/Hide Email:** 
 - There's is a part of the webpage "email".onclick event is triggered with it,and showhideEmail() function Associated with it.
@@ -157,7 +158,7 @@ We have done the Web API Integration using Ajax to display a random joke and by 
             setInterval(drawClock,1000);
   ```
 
-![BASIC_JAVASCRIPT](images/BASIC_JAVASCRIPT.png)
+![SIMPLE_JAVASCRIPT](images/BASIC_JAVASCRIPT.png)
 
 
 
