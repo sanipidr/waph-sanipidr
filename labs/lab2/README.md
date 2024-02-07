@@ -88,7 +88,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
               <i>Form with an HTTP POST Request</i>
               <form action="/echo.php" method="POST" name="echo_post">
                   your input: <input name="data"
-                              onkeypress="console.log('you have pressed a Key')">
+                              onkeypress="console.log
+                              ('you have pressed a Key')">
                   <input type="submit" value="Submit" formtarget="_blank">
               </form>    
           </div>
@@ -202,7 +203,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 
 - source code: `Inline CSS`
 
-```<!DOCTYPE html>
+```CSS
+<!DOCTYPE html>
 <html>
 <head>
 <meta cahrset="utf-8">
