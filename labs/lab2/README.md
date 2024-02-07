@@ -73,7 +73,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
       </div>
       <div id="main">
           <p>A Simple HTML Page</p>
-          Using the <a href="https://www.w3schools.com/html" target= "_blank"> W3Schools template</a>
+          Using the <a href="https://www.w3schools.com/html" 
+          target= "_blank"> W3Schools template</a>
           <hr> 
           <b>Interaction with forms</b>
           <div>
@@ -94,7 +95,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
           <b> Experiments with JavaScript Code</b>
           <br>
           <i> Inlined JavaScript</i>
-          <div id="date" onclick="document.getElementById('date').innerHTML=Date()">Click here to show Date()</div>
+          <div id="date" onclick="document.getElementById('date')
+          .innerHTML=Date()">Click here to show Date()</div>
           <hr>
       </div> 
   </div>   
@@ -112,7 +114,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
   <hr> 
   <b>Experiment with Java script Code</b><br>
   <i>Inclined Javascript</i> 
-  <div id="date" onclick="document.getElementById('date').innerHTML=Date()">Click here to show date</div>
+  <div id="date" onclick="document.getElementById('date').
+  innerHTML=Date()">Click here to show date</div>
   ```
 
 
@@ -122,7 +125,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 - source code: `Digital clock `
 ```
    function displayTime() {
-                    document.getElementById('digital-clock').innerHTML ="Current time:" + new Date();}
+                    document.getElementById('digital-clock')
+                    .innerHTML ="Current time:" + new Date();}
             setInterval(displayTime,500);
 ```
 
@@ -138,7 +142,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
       document.getElementById('email').innerHTML = "Show my email";
     shown = false;
     }else{
-      var myemail = "<a href='mailto:sanipidr"+ "@" + "mail.uc.edu'> sanipidr"+ "@" + "mail.uc.edu</a>";
+      var myemail = "<a href='mailto:sanipidr"+ "@" 
+      + "mail.uc.edu'> sanipidr"+ "@" + "mail.uc.edu</a>";
       document.getElementById('email').innerHTML=myemail;
       shown=true;
     }
@@ -179,7 +184,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                         console.log("Received data="+xhttp.responseText);
-                        document.getElementById("response").innerHTML="Response from server:" + xhttp.responseText;
+                        document.getElementById("response")
+                        .innerHTML="Response from server:" + xhttp.responseText;
                             
                     }
                 }
@@ -193,6 +199,45 @@ We have done the Web API Integration using Ajax to display a random joke and by 
 
 **b.CSS:**
 - CSS makes the web page looks good.CSS use as a style guide for the web page.CSS code written in the  HTML code.The CSS will add special touches to the specific elements like buttons.All the CSS work together to make the webpage look nice and consistent.<br>
+
+- source code: `Inline CSS`
+
+```<!DOCTYPE html>
+<html>
+<head>
+<meta cahrset="utf-8">
+<title>WAPH-sanipidr</title>
+<link rel="stylesheet" href=https://waph-uc.github.io/style1.css>
+<style>
+  .button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .round {border-radius: 8px;}
+  #response {background-color: #ff9800;}
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=
+" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container wrapper"> 
+<div id="top">
+  <h1>Web Application Programming and Hacking</h1>
+  <h2>Front-end Web Development Lab</h2>
+  <h3>Instructor: Dr.Phu Phung</h3>
+ </div>
+  <div class="wrapper">
+```
+
 
 ![CSS](images/CSS.png)
 
@@ -209,7 +254,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
                     if (input.length == 0) return;
                     $.get("echo.php?data="+input,
                             function(result) {
-                                $("#response").html("Response from server:" + result);
+                                $("#response")
+                                .html("Response from server:" + result);
                         }
                     );
                     $("#data").val("");
@@ -248,10 +294,11 @@ We have done the Web API Integration using Ajax to display a random joke and by 
     $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
                     function(result){
                         console.log("From jokeAPI: " + JSON.stringify(result));
-                        $("#response").html("A programming joke of the day: " + result.joke);
+                        $("#response").html("A programming joke of the day: "
+                         + result.joke);
                     }
             );
-            ````
+```
 
 
 
@@ -265,7 +312,8 @@ We have done the Web API Integration using Ajax to display a random joke and by 
     async function guessAge(name){
                 const response = await fetch("https://api.agify.io/?name="+name);
                 const result = await response.json();
-                $("#response").html("Hello" + name +", your age should be "+ result.age);
+                $("#response").html("Hello" + name +", 
+                your age should be "+ result.age);
 
             }
               
