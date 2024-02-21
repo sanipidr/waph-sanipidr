@@ -63,9 +63,11 @@
   }
    function getEcho(){
 				var input = document.getElementById("data").value;
-				if (input.length == 0) {
+				if (!input) {
+					alert("Please give some input");
 					return;
 				}
+
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
@@ -81,8 +83,11 @@
 
 	function jQueryAjax() {
 				var input = $("#data").val();
-				if (input.length == 0) return;
-				$.get("echo.php?data="+input,
+				if (!input) {
+					alert("Please give some input");
+					return;
+				}
+				$.get("echo_2.php?data="+input,
 					function(result) {
 						$("#response").html("Response from server:" + result);
 					}
@@ -92,7 +97,11 @@
 
 			function jQueryAjaxPost() {
 				var input = $("#data").val();
-				if (input.length == 0) return;
+				if (!input) {
+					alert("Please give some input");
+					return;
+				}
+
 				$.post("echo.php", {data: input},
 					function(result) {
 						$("#response").html("Response from server:" + result);
