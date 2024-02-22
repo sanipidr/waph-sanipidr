@@ -31,16 +31,20 @@ Respository's URL: [https://github.com/sanipidr/waph-sanipidr/tree/main/Hackatho
 - URL: http://waph-hackathon.eastus.cloudapp.azure.com/xss/level0/echo.php
 
 -Attacking Script:
+```
 <script>alert('Level-0 Hacked by Dilip Kumar Sanipina')</script>
+```
 
 ![Level-0](images/LEVEL_0.png)
 
 **Level-1**
 - URL: http://waph-hackathon.eastus.cloudapp.azure.com/xss/level1/echo.php
 
+-XSS vulnerabilities by appending an attacking the script at the end of the URL
 -Attacking Script:
+```
    ?input=<script>alert('Level-1 Hacked by Dilip Kumar Sanipina')</script>
-
+```
 ![Level-1](images/LEVEL_1.png)
 
 
@@ -51,13 +55,15 @@ Respository's URL: [https://github.com/sanipidr/waph-sanipidr/tree/main/Hackatho
 - The website's HTTP request doesn't include input fields or path variables. Instead, it's connected to a simple HTML form. This form lets people submit offensive scripts directly, which opens the door for injecting harmful code into the website.
 
 -Attacking Script:
+```
 	?input= <script>alert('Level-2 Hacked by Dilip Kumar Sanipina')</script>
-
+ ```
 Guess Source Code:
 - source code: `Guessing source code `
 
 	 if (!isset($_POST['input'])){
-	            die("{\"error\": \"please provide the 'input' field in a Http POST Request\"}"");
+	            die("{\"error\": \"please provide the 
+	            'input' field in a Http POST Request\"}"");
 	        }      
 	 echo $_POST['input'];
 
@@ -71,7 +77,11 @@ Guess Source Code:
 - At level-3, the web application filters out the <Script> tag that's directly entered through the input.However, attackers can still break their harmful code into smaller parts to bypass this filter and successfully carry out an XSS attack.
 
 -Attacking Script:
+
+``
    ?input= <scr<script>ipt>alert('Level-3 Hacked by Dilip Kumar Sanipina')</scr</script>ipt>
+``
+
 Guess Source Code:
 - source code: `Guessing source code `
 
@@ -86,8 +96,10 @@ Guess Source Code:
 - At level-4 filtering, direct <script> tags are blocked. Instead, attackers exploit the onload() function of the body tag to execute XSS scripts. They combine their script with this function, triggering malicious actions once the page finishes loading. This bypasses filtering and underscores the need for robust security practices to mitigate XSS vulnerabilities effectively.
 
 -Attacking Script:
-   ?input= <body onload="alert('Level-4 Hacked by Dilip Kumar Sanipina')">hacked</body>
 
+````
+   ?input= <body onload="alert('Level-4 Hacked by Dilip Kumar Sanipina')">hacked</body>
+```
 Guess Source Code:
 - source code: `Guessing source code `
 
@@ -107,13 +119,16 @@ Guess Source Code:
 - At level-5 security, both the <script> tag and the alert() function are filtered out to prevent XSS attacks. To overcome these restrictions and still trigger a popup alert, attackers use a clever combination of encoding techniques and the onload() method with the body tag. This indirect approach allows them to execute JavaScript code despite the filters in place, highlighting the need for robust security measures to counter such tactics effectively.
 
 -Attacking Script:
-   ?input= <body onload="\u0061lert('Level-5 Hacked by Dilip Kumar Sanipina')">hacked</body>
-
+```
+   ?input= <body onload="\u0061lert('Level-5 Hacked by Dilip Kumar Sanipina')
+   ">hacked</body>
+```
 - Guess Source Code:
 - source code: Guessing source code
 
    $input =  $_GET['input']
-		if (preg_match('/<script\b[^>]*>(.*?')<\/script>/is',$data) || stripos($data 'alert')!== false) {
+		if (preg_match('/<script\b[^>]*>(.*?')<\/script>/is',$data) 
+			|| stripos($data 'alert')!== false) {
 			exit('{"error": "No \'script\' is allowed!"}');
 		}
 		else
@@ -128,8 +143,10 @@ Guess Source Code:
 - In Level-6, the approach involves using htmlentities() to transform user input into HTML entities, making it display as plain text on the webpage. However, JavaScript event listeners such as onclick() are set up to detect key presses within the input field. This setup allows for the execution of JavaScript code, including triggering alerts, while still keeping the user input safely displayed as text. This strategy ensures security by preventing direct execution of JavaScript code from user input while enabling desired interactivity through event listeners.
 
 Attacking Script:
-   ?input= <body onload="\u0061lert('Level-6 Hacked by Dilip Kumar Sanipina')">hacked</body>
-
+```
+   ?input= <body onload="\u0061lert('Level-6 Hacked by Dilip Kumar Sanipina')
+   ">hacked</body>
+```
 Guess Source Code:
 - source code: Guessing source code
 
