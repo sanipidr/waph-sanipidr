@@ -150,6 +150,7 @@ Guess Source Code:
 
 source code:
 
+```
 <?php
         
         if (!isset($_REQUEST["data"])){
@@ -159,11 +160,12 @@ source code:
         echo htmlentities($_REQUEST['data']);
 ?>
 
+```
 
 ![echo.php](images/echo.jpeg)
 
 
-![Git commit](images/echo.phpgithubcommit.png)
+![Git commit](images/echo_commit.jpeg)
 
 **Current front end prototype**
 
@@ -171,7 +173,7 @@ source code:
 
 ![Input Validation](images/Input_Validation.png)
 
-![Git commit](images/echo_commit.jpeg)
+![Git commit](images/echo.phpgithubcommit.png)
 
 - Following the input validation, I've implemented output encoding by defining an "encode text" function. This function encodes the output before printing it to the screen. Additionally, we display both the encoded and decoded messages. To ensure ongoing validation, I've added console alerts every time a user submits a request. This approach enhances security by encoding output to prevent XSS attacks and provides real-time validation feedback through console alerts.
 
