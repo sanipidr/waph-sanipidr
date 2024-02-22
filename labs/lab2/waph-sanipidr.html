@@ -83,13 +83,18 @@
 
 	function jQueryAjax() {
 				var input = $("#data").val();
+				var encoded_input = jquery.param({data: input});
 				if (!input) {
 					alert("Please give some input");
 					return;
 				}
-				$.get("echo_2.php?data="+input,
+				$.get("echo_2.php?data="+encoded_input,
 					function(result) {
-						$("#response").html("Response from server:" + result);
+						var encodedval = encodeURIComponent(result);
+						var decodeval = decodeURIComponent(encodedval);
+						$("#response").html("Response from server:" + decodeval);
+						console.log("Encoded.result:", encodedval);
+						console.log("Decoded result:", decodeval);
 					}
 				);
 				$("#data").val("");
