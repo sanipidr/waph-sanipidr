@@ -1,4 +1,3 @@
-create table users(
-  username varchar(50) PRIMARY KEY,
-  Password varchar(100) NOT NULL);
-INSERT INTO users(username,Password) VALUES ('dilip',md5('dilip@123'));
+create database waph;
+CREATE USER 'sanipidr'@'localhost' IDENTIFIED BY 'Pa$$w0rd';
+GRANT ALL ON waph.*TO'sanipidr'@'localhost';

